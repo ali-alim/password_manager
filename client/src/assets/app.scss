@@ -1,0 +1,16 @@
+$mainColor: #ed5175;
+@import "./fonts.scss";
+@import "./login.scss";
+
+.vh-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
