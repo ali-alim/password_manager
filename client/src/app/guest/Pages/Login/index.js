@@ -17,7 +17,6 @@ const Login = ({
     data["email"] = values.email;
 
     try {
-      console.log("values",values)
       const res = await axios.post(process.env.REACT_APP_API_URL + "/users/login", data);
       setCurrentUsername(res.data.name);
       myStorage.setItem('user', res.data.name);

@@ -14,16 +14,11 @@ const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 
   const handleLogout = () => {
-    console.log("clicked on handleLogout");
     setCurrentUsername(null);
     myStorage.removeItem("user");
     setShowRegister(false);
     setShowLogin(false);
   };
-
-  console.log("currentUsername", currentUsername);
-  console.log("showRegister", showRegister);
-  console.log("showLogin", showLogin);
 
   return (
     <div

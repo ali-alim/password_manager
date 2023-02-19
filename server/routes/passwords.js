@@ -16,7 +16,6 @@ router.post("/", async (req, res) => {
     const password = await newPassword.save();
     res.status(200).json(password._id);
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 });

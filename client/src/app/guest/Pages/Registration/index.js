@@ -17,7 +17,6 @@ const Registration = ({
     data["email"] = values.email;
 
     try {
-      // console.log("values",values)
       await axios.post(process.env.REACT_APP_API_URL + "/users/register", data);
       setError(false);
       setSuccess(true);
